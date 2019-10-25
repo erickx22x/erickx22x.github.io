@@ -5,13 +5,31 @@
     <meta name="keywords" content="Tags áudio e vídeo">
     <meta name="description" content="Treinando incorporações no código">
     <meta name="author" content="Érick Almeida">
-		<title>Incorporar ao código</title>
+		<title>Incorporando arquivos ao código</title>
 
 	</head>
 	<body>
+
     <h2>Vídeo do youtube</h2>
     <iframe width="853" height="480" src="https://www.youtube.com/embed/AkI6XMWmlPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h2>Incorporar html</h2>
     <iframe src="http://www.iff.edu.br" width="400" height="300"><p>Your browser does not support iframes.</p></iframe>
+
+		<h2>Incorporar arquivo swf com embed</h2>
+		<embed width="400" height="300" src="teste.swf">
+
+		<h2>Incorporar arquivo swf com object</h2>
+		<object type="application/x-shockwave-flash"data="teste.swf"width="400" height="300"><param name="loop" value="false" /><param name="teste" value="teste.swf" /><p>This is alternative content</p></object>
+
+		<h2>Incorporar áudio</h2>
+		<audio autoplay="autoplay" controls="controls"> <source src="audio.mp3" type="audio/mp3" /><p>seu navegador não suporta Audio em HTML5</p></audio>
+
+		<h2>Incorporar em mp4</h2>
+		<video width="320" height="240" controls="controls"><source src="video.mp4" type="video/mp4"><p>Seu navegador não suporta Video em HTML5.</p></video>
+
+		<h2>Incorporar em ogv</h2>
+		<video width="320" height="240" controls="controls"><source src="video.ogv" type="video/ogg"><p>Seu navegador não suporta Video em HTML5.</p></video>
+
+
 	</body>
 </html>

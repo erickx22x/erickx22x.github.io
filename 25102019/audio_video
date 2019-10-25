@@ -1,1 +1,17 @@
-egtfhwegf
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Tags áudio e vídeo">
+    <meta name="description" content="Treinando incorporações no código">
+    <meta name="author" content="Érick Almeida">
+		<title>Incorporar ao código</title>
+
+	</head>
+	<body>
+    <h2>Vídeo do youtube</h2>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/AkI6XMWmlPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Incorporar html</h2>
+    <iframe src="http://www.iff.edu.br" width="400" height="300"><p>Your browser does not support iframes.</p></iframe>
+	</body>
+</html>

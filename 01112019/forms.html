@@ -11,11 +11,39 @@
 	
 	<body>
 		<form action ="https://www.google.com/search" method = "get" >
-        		Pesquisar:
-			<input type = "search" name = "q" placeholder = "Digite aqui sua consulta" size = "25" maxlength="100"> 
-        		<input type = "submit" name = "Buscar" value = "Buscar">
-        		<input type = "reset" name = "Limpar" value = "Limpar">
-		</form>
+        
+        Pesquisar:
+        <datalist id = "lista">
+        	<option value= "Brasil">
+            <option value= "Itália">
+            <option value = "Espanha">
+        </datalist>
+        
+		<input type = "password" name = "q" placeholder = "Digite aqui sua consulta" size = "25" maxlength="100" list = "lista"> 
+        <input type = "submit" name = "Buscar" value = "Search">
+        <input type = "reset" name = "Limpar" value = "Limpar"><br>
+        
+        <input type = "radio" name = "tipos de busca" value = "Buscas"/>Jogos
+        <input type = "radio" name = "tipos de busca" value = "Buscas"/>Esportes
+        <input type = "radio" name = "tipos de busca" value = "Buscas"/>Notícias<br>
+        
+        <input type = "checkbox" name = "tipos de busca" value = "Buscas"/>Jogos
+        <input type = "checkbox" name = "tipos de busca" value = "Buscas"/>Esportes
+        <input type = "checkbox" name = "tipos de busca" value = "Buscas"/>Notícias<br>
+        
+        <select name = "buscas" size = "5">
+          <optgroup label = "Buscas Principais">
+          <option value = "valor1">Jogos</option>
+          <option value = "valor2">Esportes</option>
+          <option value = "valor3">Notícias</option>
+          <optgroup label = "Outras buscas">
+          <option value = "valor1">Filmes</option>
+          <option value = "valor2">Shoppings</option>
+          <option value = "valor3">Bancos</option>
+        </select>
+
+        
+   		</form>
 	</body>
 </html>
 

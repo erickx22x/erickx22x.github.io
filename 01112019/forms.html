@@ -21,7 +21,8 @@
                 <option value = "Espanha">
           </label>
             </datalist>
-	    <input type = "text" name = "q" placeholder = "Digite aqui sua consulta" size = "25" maxlength="100" list = "lista" autocomplete = on pattern = "(?=.*\d)(?=.*[a-z]).{10,}">             <input type = "submit" name = "Buscar" value = "Search">
+            <input type = "text" name = "q" placeholder = "Digite aqui sua consulta" size = "25" maxlength="100" list = "lista" autocomplete = on pattern = "(?=.*\d)(?=.*[a-z]).{10,}"> 
+            <input type = "submit" name = "Buscar" value = "Search">
             <input type = "reset" name = "Limpar" value = "Limpar"><br>
        	</fieldset>
         
@@ -52,8 +53,18 @@
         
         <legend>Caixa disabled</legend>
         <textarea disabled rows="10" cols="40" maxlength = "100">teste</textarea><br>
+        
         <legend>Caixa somente leitura</legend>
-        <textarea readonly rows="10" cols="40" maxlength = "100">teste</textarea><br>
+        <textarea readonly rows="10" cols="40" maxlength = "100" autofocus>teste</textarea><br><br>
+        
+        <legend>Color picker</legend>
+        <input type = "color"><br><br>
+        
+        <legend> Range </legend>
+        <input type="range"><br><br>
+        
+        <legend> Date </legend>
+        <input type = "date"><br><br>
 
 	Upload:<input type="file" value = "Enviar arquivo">
 	

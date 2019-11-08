@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "keywords" content = "Atividade, Form, hipermidias">
+    <meta name = "description" content = "Atividade avaliativa Form">
+    <meta name = "author" content = "Érick Almeida">
+    <title>Aulas de Hipermidias</title>
+  </head>
+
+  <body>
+    <h1>Aulas de Hipermidias</h1>
+    <h2>Preencha o formulário abaixo</h2><br>
+
+    <form action ="." method = "post">
+
+    	<fieldset><legend>Dados Pessoais</legend>
+
+        <label for = "Nome"><br>&ensp;Nome:&emsp;&emsp;&emsp;</label>
+        <input type = "text" name = "Nome" id = "Nome" maxlength = "20"
+        pattern = "[A-Za-z\wÀ-ú\s]{2,20}" title = "Nome pode conter apenas letras" size = 16
+        autofocus required >
+
+        <label for = "Sobrenome">&emsp;Sobrenome:&ensp;</label>
+        <input type = "text" name = "Sobrenome" id = "Sobrenome" maxlength="50"
+        pattern = "[A-Za-z\wÀ-ú\s]{2,50}" title="Sobrenome pode conter apenas letras" size = 16><br><br>
+
+        <label for="Nascimento">&ensp;Nascimento:&ensp;&thinsp;</label>
+        <input type="text" name="Dia" id="Nascimento" size=1 maxlength="2" value = "dd"
+        pattern="^([0-2][0-9]|3[0-1])" title="Digite o dia corretamente">&nbsp;
+        <input type="text" name="Mês" size=1 maxlength="2" value = "mm"
+        pattern="^(0[0-9])|(1[0-2])" title="Digite o mês corretamente">&nbsp;
+        <input type="text" name="Ano" size=4 maxlength="4"
+        pattern="^([1][9][1-9]{2}|[2][0]\d{2})" title="Digite o ano corretamente" value = "aaaa"><br><br>
+
+        <label for = "RG">&ensp;RG:&emsp;&emsp;&emsp;&emsp;</label>
+        <input type = "text" name = "RG" id= "RG" size = "10" pattern = "\d{9}"
+        maxlength = "9" title = "Digite os nove números do seu RG" required><br><br>
+
+        <label for = "CPF">&ensp;CPF:&emsp;&emsp;&nbsp;&emsp;&thinsp;&thinsp;</label>
+        <input type = "text" name = "CPF" id ="CPF" size = "6" maxlength = "9" required
+        title = "Digite os números corretamente" pattern = "\d{9}">&thinsp; &dash;&thinsp;
+        <input type = "text" name = "CPF" size = "2" maxlength = "2"
+        title = "Digite os números corretamente" pattern = "\d{2}"><br><br>
+      </fieldset><br>
+
+      <fieldset><legend>Dados de Endereço</legend>
+
+        <label for = "Rua"><br>&ensp;Rua:&emsp;&ensp;&thinsp;</label>
+        <input type = "text" name = "Rua" id = "Rua" maxlength = "20" required
+        pattern = "[A-Za-z\wÀ-ú\s]{5,35}" title = "Rua pode conter apenas letras" size = 17>
+        <label for = "Numero">&ensp;Número:&ensp;</label>
+        <input type = "text" name = "Numero" id = "Numero" maxlength="5"
+        pattern = "\d{5}" title = "Digite apenas números" size = 3><br><br>
+
+        <label for = "Bairro">&ensp;Bairro:&thinsp;&ensp;</label>
+        <input type = "text" name = "Bairro" id = "Bairro" maxlength = "35" size = "17"
+        title = "Digite apenas letras" pattern = "[A-Za-z\wÀ-ú\s]{2,35}"><br><br>
+
+        <label for = "Estado">&ensp;Estado:&nbsp;&nbsp;</label>
+        <select name = "Estado" id = "Estado">
+          <option value = "value0" selected hidden>Selecione seu estado</option>
+          <option value = "value1">Acre</option>
+          <option value = "value2">Alagoas</option>
+          <option value = "value3">Amapá</option>
+          <option value = "value4">Amazonas</option>
+          <option value = "value5">Bahia</option>
+          <option value = "value6">Ceará</option>
+          <option value = "value7">Distrito Federal</option>
+          <option value = "value8">Espírito Santo</option>
+          <option value = "value9">Goiás</option>
+          <option value = "value10">Maranhão</option>
+          <option value = "value11">Mato Grosso</option>
+          <option value = "value12">Mato Grosso do Sul</option>
+          <option value = "value13">Minas Gerais</option>
+          <option value = "value14">Pará</option>
+          <option value = "value15">Paraíba</option>
+          <option value = "value16">Paraná</option>
+          <option value = "value17">Pernambuco</option>
+          <option value = "value18">Piauí</option>
+          <option value = "value19">Rio de Janeiro</option>
+          <option value = "value20">Rio Grande do Norte</option>
+          <option value = "value21">Rio Grande do Sul</option>
+          <option value = "value22">Rondônia</option>
+          <option value = "value23">Roraima</option>
+          <option value = "value24">Santa Catarina</option>
+          <option value = "value25">São Paulo</option>
+          <option value = "value26">Sergipe</option>
+          <option value = "value27">Tocantins</option>
+        </select><br><br>
+
+        <label for = "Cidade">&ensp;Cidade:&thinsp;&thinsp;</label>
+        <input type = "text" name = "Cidade" id = "Cidade" maxlength = "25" size = "17"
+        pattern = "[A-Za-z\wÀ-ú\s]{5,35}" title = "Digite apenas letras"><br><br>
+
+        <label for = "CEP">&ensp;CEP:&emsp;&thinsp;&thinsp;</label>
+        <input type = "text" name = "CEP" id = "CEP" maxlength = "5" size = "4"
+        pattern = "\d{5}" title = "Digite os números corretamente" required>&thinsp; &dash;&thinsp;
+        <input type = "text" name = "CEP" size = "2" maxlength = "3"
+        title = "Digite os números corretamente" pattern = "\d{3}">
+
+      </fieldset><br>
+
+      <fieldset><legend>Dados de login</legend>
+
+        <label for = "E-mail"><br>&ensp;E-mail:&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;</label>
+        <input type = "text" name = "E-mail" id = "E-mail" required maxlength="40" required
+        size = "18" pattern = "[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?" title="Digite um e-mail válido"><br><br>
+
+        <label for = "Imagem">&ensp;Imagem de perfil:&ensp;</label>
+        <input type = "file" id = "Imagem"><br>
+
+        <label for = "Login"><br>&ensp;Login de usuário:&nbsp;&thinsp;&thinsp;</label>
+        <input type = "text" name = "Login" id = "Login" required maxlength="20"
+        size = "18" pattern = "^(?![_.])[A-Za-z0-9_.]+(?<![_.])$" title = "Digite um login válido"><br>
+
+        <label for = "Senha"><br>&ensp;Senha:&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&thinsp;</label>
+        <input type = "password" name = "Senha" id = "Senha" required maxlength="20"
+        size = "18" pattern = "^(?![_.])[A-Za-z0-9_.]+(?<![_.])$" title="Digite uma senha válida"><br>
+
+        <label for = "Validar"><br>&ensp;Confirmar senha:&ensp;&thinsp;</label>
+        <input type = "password" name = "confirmar senha" id = "Validar" required maxlength="20"
+        size = "18" pattern = "^(?![_.])[A-Za-z0-9_.]+(?<![_.])$" title="Digite uma senha válida">
+      </fieldset><br>
+
+      <fieldset><legend>Pesquisa de Interesse</legend>
+
+        <table>
+  				<tr>
+  					<td rowspan ="5"><label for = "q1"><br>&ensp;Você deseja trabalhar como Webmaster?</label></td>
+  				</tr>
+  				<tr>
+  					<td><input type = "radio" name = "q1" value = "Sim" id="q1">Sim</td>
+  				</tr>
+  				<tr>
+  					<td><input type = "radio" name = "q1" value = "Não">Não</td>
+  				</tr>
+  				<tr>
+  					<td><input type = "radio" name = "q1" value = "Talvez">Talvez</td>
+  				</tr>
+  				<tr>
+  					<td><input type = "radio" name = "q1" value = "Quem Sabe">Quem Sabe</td>
+  				</tr>
+          <tr>
+            <td rowspan ="5"><label for = "q2"><br>&ensp;O que você deseja aprender?</label></td>
+          </tr>
+          <tr>
+            <td><input type = "checkbox" name = "q2" value = "HMTL" id="q2">HTML</td>
+          </tr>
+          <tr>
+            <td><input type = "checkbox" name = "q2" value = "CSS">CSS</td>
+          </tr>
+          <tr>
+            <td><input type = "checkbox" name = "q2" value = "JavaScript">JavaScript</td>
+          </tr>
+          <tr>
+            <td><input type = "checkbox" name = "q2" value = "Django">Django</td>
+          </tr>
+          <tr>
+            <td rowspan = "2"><label for = "Comentário"><br>&ensp;Deixe seu comentário:</label></td>
+          </tr>
+          <tr>
+            <td><textarea rows = "10" cols = "45" id = "Comentário"></textarea></td>
+          </tr>
+  			</table><br>
+
+      </fieldset><br>
+
+
+      <input type = "submit" name ="Enviar" value = "Enviar">
+      <input type = "reset" name = "Limpar" value = "Limpar">
+    </form>
+  </body>
+</html>

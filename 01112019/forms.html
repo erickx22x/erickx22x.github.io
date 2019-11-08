@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name="keywords" content="formulario">
+    	<meta name="description" content="Testando implementação de form">
+    	<meta name="author" content="Érick Almeida">
+		<title> Forms </title>
+	</head>
+	
+	<body>
+		<form action ="https://www.google.com/search" method = "get" >
+        
+        <fieldset><legend>Campo de pesquisa</legend>
+          <label for = "Pesquisar">
+            Pesquisar:
+            <datalist id = "lista">
+                <option value= "Brasil">
+                <option value= "Itália">
+                <option value = "Espanha">
+          </label>
+            </datalist>
+            <input type = "text" name = "q" placeholder = "Digite aqui sua consulta" size = "25" maxlength="100" list = "lista" autocomplete = on pattern = "(?=.*\d)(?=.*[a-z]).{10,}"> 
+            <input type = "submit" name = "Buscar" value = "Search">
+            <input type = "reset" name = "Limpar" value = "Limpar"><br>
+       	</fieldset>
+        
+        <fieldset><legend>Caixa de seleção</legend>
+          <input type = "radio" name = "tipos de busca" value = "Buscas"/>Jogos
+          <input type = "radio" name = "tipos de busca" value = "Buscas"/>Esportes
+          <input type = "radio" name = "tipos de busca" value = "Buscas"/>Notícias<br>
+        </fieldset>
+        
+        <fieldset><legend>Checkbox</legend>
+          <input type = "checkbox" name = "tipos de busca" value = "Buscas"/>Jogos
+          <input type = "checkbox" name = "tipos de busca" value = "Buscas"/>Esportes
+          <input type = "checkbox" name = "tipos de busca" value = "Buscas"/>Notícias<br>
+        </fieldset>
+        
+        <fieldset><legend>Menu</legend>
+          <select name = "buscas" size = "5">
+            <optgroup label = "Buscas Principais">
+            <option value = "valor1">Jogos</option>
+            <option value = "valor2">Esportes</option>
+            <option value = "valor3">Notícias</option>
+            <optgroup label = "Outras buscas">
+            <option value = "valor1">Filmes</option>
+            <option value = "valor2">Shoppings</option>
+            <option value = "valor3">Bancos</option>
+          </select><br>
+        </fieldset>
+        
+        <legend>Caixa disabled</legend>
+        <textarea disabled rows="10" cols="40" maxlength = "100">teste</textarea><br>
+        
+        <legend>Caixa somente leitura</legend>
+        <textarea readonly rows="10" cols="40" maxlength = "100" autofocus>teste</textarea><br><br>
+        
+        <legend>Color picker</legend>
+        <input type = "color"><br><br>
+        
+        <legend> Range </legend>
+        <input type="range"><br><br>
+        
+        <legend> Date </legend>
+        <input type = "date"><br><br>
+
+	Upload:<input type="file" value = "Enviar arquivo">
+	
+        
+   		</form>
+	</body>
+</html>
+

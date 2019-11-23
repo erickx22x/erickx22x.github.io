@@ -1,27 +1,46 @@
-ul{
-  position: absolute;
-  padding-right: 2px;
-  padding-left: 5px;
-  background-color: #cecece;
-  height: 40px;
-  width: 580px;
-  }
-
-li{
+li.li-h{
 	display: inline;
 	border: none;
 	color: solid black;
-	margin: 4px;
+	margin: none;
 }
 
-a:hover{	
+li.li-v{
+	list-style-type: none;
+	border: none;
+	color: solid black;
+	margin: none;
+}
+
+
+a.horizontal:hover{	
+	background-color: white;
+}
+a.vertical:hover{	
 	background-color: white;
 }
 
-a{
+a.horizontal{
+	position: relative;
+	top: 10px;
+	background-color: #cecece;
 	padding: 20px;
 	position: relative;
 	font-size: 25px;
 	text-decoration: none;
 	color: black;
+	border: 1px solid white;
+}
+
+a.vertical{
+	display: block;
+	width: 170px;
+	top: 10px;
+	background-color: #cecece;
+	padding: 20px;
+	position: relative;
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+	border: 1px solid white;
 }

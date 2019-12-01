@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Artigo, CSS">
+    <meta name="description" content="Edição de artigo e layout com css">
+    <meta name="author" content="Érick Almeida">
+    <title>Layout CSS</title>
+
+    <link rel="stylesheet" type="text/css" href="site.css">
+    </head>
+  <body>
+    <header><h1>Meu Primeiro Site</h1></header>
+
+    <nav>
+      <a href="#">Página Inicial</a>
+      <a href="#">Feed RSS</a>
+      <a href="#">Fotos</a>
+      <a href="#">Links</a>
+    </nav>
+
+    <section>
+      <header>
+          <h2>Lorem ipsum</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      	A lacus vestibulum sed arcu. Ultricies lacus sed turpis tincidunt id aliquet risus.</p>
+      <p>Odio morbi quis commodo odio aenean. Arcu non odio euismod lacinia at quis risus. Vitae turpis massa sed elementum tempus egestas sed sed risus.
+      	Duis ultricies lacus sed turpis tincidunt id. Scelerisque eu ultrices vitae auctor eu augue ut lectus.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Vestibulum sed arcu non odio euismod lacinia at quis. Ullamcorper malesuada proin libero nunc consequat.
+      	Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Purus viverra accumsan in nisl nisi scelerisque.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Cras adipiscing enim eu turpis egestas pretium. Orci nulla pellentesque dignissim enim sit amet venenatis urna.
+      	Sit amet purus gravida quis blandit turpis cursus in hac. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+      	Sed risus pretium quam vulputate dignissim suspendisse in. Pellentesque elit ullamcorper dignissim cras tincidunt.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <footer>
+  	   Copyright 2014-2019 Lorem Ipsum
+  	</footer>
+    </body>
+
+    </html>

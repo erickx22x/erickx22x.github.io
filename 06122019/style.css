@@ -1,3 +1,93 @@
+<<<<<<< HEAD
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.grid-template{
+	display: grid;
+	grid-template-columns: 65% 35%;
+	grid-template-rows: 100px 50px 500px 50px ;
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"main aside"
+		"footer footer"
+	;
+}
+.item-header{
+	grid-area: header;
+	margin: 10px 10px 0px;
+	background: tomato;
+	text-align: left;
+	padding-bottom: 30px;
+}
+.item-nav{
+	grid-area: nav;
+	margin: 0px 10px 0px;
+	padding:15px;
+	padding-left: 10px;
+	background: yellow;
+	text-align: left;
+}
+
+/*Section*/
+.item-main{
+	grid-area: main;
+	padding: 10px;
+	padding-bottom: 40px;
+	background-color: #f0f5f5;
+	margin-left: 10px;
+}
+
+.item-main header{
+	background-color: #adad85;
+}
+
+.item-main p.header-date{
+	background-color: #adad85;
+}
+
+.item-main p.inside{
+	padding-bottom: 50px;
+	background-color:rgb(137, 69, 137);
+}
+
+.item-main footer{
+	background-color: rgb(52, 18, 52);
+}
+
+/*aside*/
+
+.item-aside{
+	grid-area: aside;
+	margin-right: 10px;
+	padding:10px 10px 10px;
+	background: rgb(52, 86, 120);
+	text-align: left;
+}
+
+/*outside footer*/
+
+.item-footer{
+	grid-area: footer;
+	background-color: green;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+footer a:hover{
+	background-color: white;
+	color: orange;
+}
+
+footer a{
+	color: blue;
+}
+
+li{
+	padding: 10px;
+=======
 .grid-template{
 	grid-template-columns: 75% 25%;
 	grid-template-rows: 500px 500px 500px 500px ;
@@ -18,5 +108,6 @@
 }
 
 li{
+>>>>>>> 10d65148c7d125af6bb22cbd55d96499e979968d
 	display: inline;
 }

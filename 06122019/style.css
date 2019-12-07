@@ -1,0 +1,22 @@
+.grid-template{
+	grid-template-columns: 75% 25%;
+	grid-template-rows: 500px 500px 500px 500px ;
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"section aside"
+		"section aside"
+		"footer"
+	;
+}
+
+
+.item-header{
+	background: tomato;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+li{
+	display: inline;
+}

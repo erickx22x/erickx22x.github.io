@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
 	margin: 0px;
 	padding: 0px;
@@ -87,27 +86,5 @@ footer a{
 
 li{
 	padding: 10px;
-=======
-.grid-template{
-	grid-template-columns: 75% 25%;
-	grid-template-rows: 500px 500px 500px 500px ;
-	grid-template-areas:
-		"header header"
-		"nav nav"
-		"section aside"
-		"section aside"
-		"footer"
-	;
-}
-
-
-.item-header{
-	background: tomato;
-	text-align: left;
-	font-size: 1.5em;
-}
-
-li{
->>>>>>> 10d65148c7d125af6bb22cbd55d96499e979968d
 	display: inline;
 }

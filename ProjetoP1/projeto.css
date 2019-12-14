@@ -53,9 +53,11 @@ body{
   "logo inicio inicio"
   "logo . form"
   "logo options options";
-  width: 50rem;
+  width: 100%;
 	margin: 10px;
-  padding:10px;
+	margin-left: 0px;
+	margin-right: 0px;
+  padding:0px;
   background-color: #f0f5f5;
 }
 /* header li */
@@ -122,16 +124,23 @@ a.border{
 /* nav template */
 .nav{
 	float: left;
-	width: 12rem;
-	padding: 10px;
-	margin-left: 10px;
-	background-color: #f0f5f5;
+	width: 20%;
+	padding: 0px;
+	background-color: rgb(0,0,0);/*#f0f5f5;*/
+	min-width: 212px;
+	max-width: 212px;
+
 }
 /*nav options*/
 .item-nav-options li{
 	list-style-type: none;
 	padding-bottom: 10px;
 	padding-top: 10px;
+}
+
+.item-nav-options{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .item-nav-options a{
 	text-decoration: none;
@@ -157,14 +166,14 @@ a.border{
 }
 /* popular */
 .item-nav-popular{
-	background-color: rgb(221,221,221);
+	padding-left: 0px;
 }
 .item-nav-popular ul{
 	padding-top: 20px;
 }
 .item-nav-popular h2{
 	padding: 10px;
-	padding-left: 0px;
+	padding-left: 10px;
 	background-color: #f0f5f5;
 	font-family: serif;
 	text-align: left;
@@ -184,6 +193,14 @@ a.border{
 .item-nav-popular a:hover{
 	color: white;
 }
+
+.item-nav-logo{
+	max-width: 192px;
+	max-height: 192px;
+	min-width: 192px;
+	min-height: 192px;
+	padding:10px;
+}
 /*main template*/
 .main{
 	grid-template-columns:70% 30%;
@@ -192,21 +209,24 @@ a.border{
 	"article1 div1"
 	"article2 div2"
 	"article3 div3";
-	width: 578px;
+	width: 578px
 	height: 620px;
-	margin-left: 232px;
+	margin-left: 220px;
 	padding: 10px;
-	background-color: #f0f5f5;
+	background-color: rgb(0,0,0)/*#f0f5f5*/;
 }
 /*main grid*/
 .item-div1{
 	grid-area: div1;
+	max-width: 320px;
 }
 .item-div2{
 	grid-area: div2;
+	max-width: 320px;
 }
-.item-div1{
+.item-div3{
 	grid-area: div3;
+	max-width: 320px;
 }
 .item-main-article1{
 	grid-area: article1;
@@ -221,6 +241,21 @@ a.border{
 	padding-right: 5px;
 	float:left;
 }
+
+.item-article3{
+	width: 152px;
+}
+
+.item-article2{
+	height: 170px;
+	width:152px;
+}
+
+.item-article1{
+	height:220px;
+	width: 152px;
+}
+
 .main p{
 	text-align: justify;
 }
@@ -260,7 +295,7 @@ article>a{
 	color: blue;
 }
 
-article>a:hover{
+article>a:hover{	grid-area: header;
 	color: blue;
 }
 

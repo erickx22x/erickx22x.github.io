@@ -2,6 +2,18 @@ class Agenda{
 	constructor (){
 		this.contato = [];
 	} 	
+	
+	criar(){
+	      var nome = prompt("Informe o Nome!");
+	      var sobrenome = prompt("Informe o Sobrenome!");
+	      var nascimento = prompt("Informe o Nascimento!");
+	      var tipo = prompt("Informe o Tipo do telefone!");
+	      var ddd = prompt("Informe o DDD!");
+	      var num = prompt("Informe o Numero!");
+      
+              this.adicionarContato(nome, sobrenome, nascimento, tipo, ddd, num);
+        }
+	
 	criar(){
 	      var nome = prompt("Informe o Nome!");
 	      var sobrenome = prompt("Informe o Sobrenome!");

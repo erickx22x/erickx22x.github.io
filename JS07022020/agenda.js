@@ -51,7 +51,7 @@ class Contato
       if (n == 3)
       {
         tipo = prompt("Tipo do Email?");
-        email = email("Email?);
+        email = prompt("Email?);
         this.adicionarEmail(tipo, email);
       }
       else

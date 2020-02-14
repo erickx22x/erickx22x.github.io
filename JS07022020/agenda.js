@@ -19,26 +19,63 @@ class Agenda{
 	}
 }
 
-class Contato{
-	constructor(pessoa, num){
-		this.pessoa = pessoa;
-		this.num = [];
-		this.num.push(num);
-		this.end=[];
-		this.email=[];
-	}
-	adicionarNumero(tipo,ddd,num){
-		this.num.push(new Numero(tipo,ddd,num));
-	}
-
-	adicionarEndereco(tipo, logradouro, cep, num, complemento){
-		this.end.push(new Endereco(tipo,logrodouro, cep, num, complemento));
-	}
-	adicionarEmail(tipo, email){
-		this.email.push(new Email(tipo,email));
-	}
-
-}
+class Contato
+  {
+    constructor(pessoa, numero)
+    {
+      this.pessoa = pessoa;
+      this.numero = [];
+      this.numero.push(numero);
+      this.end = [];
+      this.email = [];
+    }
+    addInfo()
+    {
+      n = prompt("Adicionar: Numero (1); Endereço(2); Email(3)");
+      if (n == 1)
+      {
+        tipo = prompt("Tipo de telefone?");
+        ddd = prompt("DDD?");
+        num = prompt("Numero?");
+        this.adicionarNumero(tipo, ddd, num);
+      }
+      if (n == 2)
+      {
+        tipo = prompt("Tipo do Endereço?");
+        logradouro = prompt("Logradouro?");
+        num = prompt("Numero?");
+        cep = prompt("CEP?");
+        complemento = prompt("Complemento?");
+        this.adicionarEndereco(tipo, logra, num, cep, comp);
+      }
+      if (n == 3)
+      {
+        tipo = prompt("Tipo do Email?");
+        email = email("Email?);
+        this.adicionarEmail(tipo, email);
+      }
+      else
+      {
+        alert("Entre com 1 2 ou 3");
+        this.addInfo();
+      }
+    }
+    
+    adicionarNumero(tipo, ddd, num)
+    {
+      this.numero.push(new Numero(tipo, ddd, num));
+    }
+    
+    adicionarEndereco(tipo, logra, num, cep, comp)
+    {
+      this.end.push(new Endereco(tipo, logra, num, cep, comp));
+    }
+    
+    adicionarEmail(tipo, email)
+    {
+      this.email.push(new Email(tipo, email));
+    }
+  }
 
 class Numero{
 	constructor(tipo,ddd,num){

@@ -1,4 +1,4 @@
-function prompt(){
+function Calcular(){
     var i = window.prompt("Digite o ano de nascimento");
     calcularIdade(i);
 }

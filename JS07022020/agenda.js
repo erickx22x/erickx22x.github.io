@@ -110,3 +110,4 @@ class Endereco{
 	}
 
 }
+var confirmar = new Agenda();

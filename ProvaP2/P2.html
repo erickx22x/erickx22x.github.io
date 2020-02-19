@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Formulário, html, JS">
+    <meta name="description" content="Formulário com Js">
+    <meta name="author" content="Érick Almeida">
+    <script type="text/javascript" src="P2.js"></script>
+
+    <title>P2 Formulário</title>
+
+  </head>
+  <body>
+    <h1>Hipermídias</h1>
+    <h2>Reservas de quarto</h2>
+      <form name="form" action="P2.html" method = "post">
+      <fieldset><legend>Dados Pessoais</legend>
+        <label for="Nome"><br>Nome:</label>
+        <input type="text" id="Nome">
+        <label for="Telefone"><br><br>Telefone:</label>
+        <input type="text" id="Telefone">
+      </fieldset>
+      <fieldset><legend>Dados reserva</legend>
+        <label for="data_chegada"><br>Data chegada</label>
+        <input type="date" id="data_chegada">
+        <label for="data_saida"><br><br>Data saída</label>
+        <input type="date" id="data_saida">
+        <label for = "Quartos"><br><br>Tipo de quarto:</label>
+        <select id = "Quartos">
+          <option value = "" selected hidden>Selecione o tipo do quarto</option>
+          <option value = "1">Single</option>
+          <option value = "2">Double</option>
+          <option value = "3">Triple</option>
+          </select>
+        <label for = "Children"><br><br>Crianças na reserva:</label>
+        <select id = "Children">
+          <option value = "" selected hidden>Selecione o número de crianças</option>
+          <option value = "0">nenhuma</option>
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+        </select><br><br>
+        </fieldset><br>
+          <input type = "submit" id ="Enviar" value = "Enviar">
+          <input type = "reset" id = "Limpar" value = "Limpar">
+        </form>
+  </body>
+</html>
